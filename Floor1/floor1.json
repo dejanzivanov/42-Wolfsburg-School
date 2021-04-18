@@ -18,7 +18,7 @@
          "startx":16,
          "starty":0,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":16,
          "x":0,
          "y":0
@@ -71,7 +71,7 @@
          "startx":0,
          "starty":0,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":0,
          "x":0,
          "y":0
