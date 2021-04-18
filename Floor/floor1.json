@@ -114,7 +114,7 @@
         {
          "draworder":"topdown",
          "id":3,
-         "name":"floorLayer",
+         "name":"floor1",
          "objects":[],
          "opacity":1,
          "type":"objectgroup",
