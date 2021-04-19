@@ -25,7 +25,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"\/Floor2\/floor2.json"
+                 "value":"https:\/\/play.workadventu.re\/_\/global\/dejanzivanov.github.io\/test_map\/Floor2\/floor2.json"
                 }],
          "type":"tilelayer",
          "visible":true,
