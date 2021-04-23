@@ -120,7 +120,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"conference"
+                 "value":""
                 }],
          "type":"tilelayer",
          "visible":true,
