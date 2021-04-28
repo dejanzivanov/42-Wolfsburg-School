@@ -104,6 +104,12 @@
          "id":22,
          "name":"aud_exit",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"startLayer",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":128,
@@ -152,12 +158,6 @@
          "id":2,
          "name":"bottom",
          "opacity":1,
-         "properties":[
-                {
-                 "name":"startLayer",
-                 "type":"bool",
-                 "value":true
-                }],
          "type":"tilelayer",
          "visible":true,
          "width":128,
