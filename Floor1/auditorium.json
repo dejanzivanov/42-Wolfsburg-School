@@ -36,7 +36,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"..\/map.json"
+                 "value":"https:\/\/play.workadventu.re\/_\/global\/dejanzivanov.github.io\/test_map\/Floor1\/floor1.json#aud_exit"
                 }],
          "type":"tilelayer",
          "visible":true,
