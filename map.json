@@ -103,7 +103,7 @@
          "height":66,
          "id":2,
          "name":"bottom",
-         "opacity":0.22,
+         "opacity":1,
          "type":"tilelayer",
          "visible":true,
          "width":128,
