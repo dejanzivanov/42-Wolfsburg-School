@@ -1063,7 +1063,7 @@
                 {
                  "height":156.5,
                  "id":23,
-                 "name":"tutoExplanation",
+                 "name":"tutorial_explanation_popup",
                  "properties":[
                         {
                          "name":"buttons",
