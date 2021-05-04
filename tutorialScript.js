@@ -3,7 +3,7 @@ var firstPopupText = 'Hey ! This is the way how to start communication with some
 var secondPopupText = 'You can also use the chat to communicate! ';
 var tutorialBubble ='tutorial_popup';
 var tutorialChat ='tutorial_chat_popup';
-var tutorialExplanation ='tutoExplanation';
+var tutorialExplanation ='tutorial_explanation_popup';
 var popupExplanation = undefined;
 function launchTutorial (){
     WA.openPopup(tutorialBubble, firstPopupText, [
@@ -48,7 +48,7 @@ WA.onEnterZone('popupZone', () => {
         launchTutorial();
     }
     else {
-        popupExplanation = WA.openPopup(targetObjectTutoExplanation, 'Do you want to review the explanation?', [
+        popupExplanation = WA.openPopup(tutorialExplanation, 'Do you want to review the explanation?', [
             {
                 label: "No",
                 className: "error",
