@@ -353,6 +353,11 @@
                  "name":"jitsiRoom",
                  "type":"string",
                  "value":"conference"
+                }, 
+                {
+                 "name":"jitsiTrigger",
+                 "type":"string",
+                 "value":"onAction"
                 }],
          "type":"tilelayer",
          "visible":true,
