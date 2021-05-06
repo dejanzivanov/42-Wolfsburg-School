@@ -322,7 +322,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"carrot"
+                 "value":"conference"
                 }, 
                 {
                  "name":"jitsiTrigger",
@@ -332,7 +332,7 @@
                 {
                  "name":"jitsiTriggerMessage",
                  "type":"string",
-                 "value":"Beep Boop"
+                 "value":"Click SPACE to join conference room."
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -375,7 +375,7 @@
                  "value":"Beep Boop"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":128,
          "x":0,
          "y":0
