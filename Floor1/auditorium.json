@@ -322,7 +322,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":""
+                 "value":"potato-slug-test"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -352,7 +352,7 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":""
+                 "value":"room-1-test"
                 }],
          "type":"tilelayer",
          "visible":true,
