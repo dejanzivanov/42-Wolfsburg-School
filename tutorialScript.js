@@ -121,9 +121,9 @@ WA.onEnterZone(bookZoneName, () => {
 WA.onLeaveZone(bookZoneName, closePopUp);
 
 WA.onEnterZone(eggZoneName, () => {
-    WA.openTab("https://www.notion.so/42wolfsburg/3-Easter-Egg-Page-ba26652a736a404cac2cc4432113280d");
+    WA.openTab("https://en.wikipedia.org/wiki/Easter_egg_(media)");
 })
-
+	//easter egg link: https://www.notion.so/42wolfsburg/3-Easter-Egg-Page-ba26652a736a404cac2cc4432113280d
 function closePopUp(){
     if (currentPopup !== undefined) {
         currentPopup.close();
