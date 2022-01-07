@@ -1,6 +1,5 @@
-# WorkAdventure Map Starter Kit
+## [42 Wolfsburg Virtual School Demo](https://play.workadventu.re/_/demo/dejanzivanov.github.io/42-Wolfsburg-School/map.json)
 
-This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
+In a colaboration with students of exceptional art and design skills. We have design our school in Virtual Space using [Work Adventure engine.](https://workadventu.re/)
 
-To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
-
+I would like to thank all the colaborators that helped us bring this project together and all the time that we have invested into making our little virtual space look alive :)
