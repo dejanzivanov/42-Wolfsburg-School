@@ -6,21 +6,21 @@ var tutorialChat ='tutorial_chat_popup';
 var tutorialExplanation ='tutorial_explanation_popup';
 var popupExplanation = undefined;
 function launchTutorial (){
-    WA.openPopup(tutorialBubble, firstPopupText, [
+    WA.ui.openPopup(tutorialBubble, firstPopupText, [
         {
             label: "Next",
             className: "popUpElement",
             callback: (popup) => {
                 popup.close();
 
-                WA.openPopup(tutorialChat, secondPopupText, [
+                WA.ui.openPopup(tutorialChat, secondPopupText, [
                     {
                         label: "Open Chat",
                         className: "popUpElement",
                         callback: (popup1) => {
                             WA.sendChatMessage("Hey we can talk here too! Beep Boop", 'Wobot');
                             popup1.close();
-                            WA.openPopup("tutorial_final_popup","You are good to go! Go through the stairs and meet our wonderful school. Beep Boop",[
+                            WA.ui.openPopup("tutorial_final_popup","You are good to go! Go through the stairs and meet our wonderful school. Beep Boop",[
                                 {
                                     label: "Got it!",
                                     className : "success",callback:(popup2 => {
@@ -41,14 +41,14 @@ function launchTutorial (){
 }
 
 
-WA.onEnterZone('popupZone', () => {
+WA.room.onEnterZone('popupZone', () => {
     WA.displayBubble();
     if (!firstTimeTutorial) {
         firstTimeTutorial = true;
         launchTutorial();
     }
     else {
-        popupExplanation = WA.openPopup(tutorialExplanation, 'Do you want to review the explanation?', [
+        popupExplanation = WA.ui.openPopup(tutorialExplanation, 'Do you want to review the explanation?', [
             {
                 label: "No",
                 className: "error",
@@ -68,9 +68,9 @@ WA.onEnterZone('popupZone', () => {
     }
 });
 
-WA.onLeaveZone('popupZone', () => {
+WA.room.onLeaveZone('popupZone', () => {
     if (popupExplanation !== undefined) popupExplanation.close();
-    WA.removeBubble();
+    WA.ui.removeBubble();
 });
 
 let arrowZoneName = 'arrow_zone';
@@ -90,13 +90,13 @@ let shiftText = "Gotta Go Fast!";
 let bookText = "'Lifelong Kindergarten: Cultivating Creativity through Projects, Passion, Peers, and Play' by Mitchel Resnick";
 
 WA.room.onEnterZone(arrowZoneName, () => {
-    currentPopup =  WA.openPopup(arrowPopup, arrowText,[])
+    currentPopup =  WA.ui.openPopup(arrowPopup, arrowText,[])
 })
 
 WA.room.onLeaveZone(arrowZoneName, closePopUp);
 
-WA.onEnterZone(wasdZoneName, () => {
-    currentPopup =  WA.openPopup(wasdPopup, wasdText,[{
+WA.room.onEnterZone(wasdZoneName, () => {
+    currentPopup =  WA.ui.openPopup(wasdPopup, wasdText,[{
 	    label: "Close",
   className: "deki",
   callback: (popup) => {
@@ -106,21 +106,21 @@ WA.onEnterZone(wasdZoneName, () => {
     }]);
 })
 
-WA.onLeaveZone(wasdZoneName, closePopUp);
+WA.room.onLeaveZone(wasdZoneName, closePopUp);
 
-WA.onEnterZone(shiftZoneName, () => {
-    currentPopup =  WA.openPopup(shiftPopup, shiftText,[]);
+WA.room.onEnterZone(shiftZoneName, () => {
+    currentPopup =  WA.ui.openPopup(shiftPopup, shiftText,[]);
 })
 
-WA.onLeaveZone(shiftZoneName, closePopUp);
+WA.room.onLeaveZone(shiftZoneName, closePopUp);
 
-WA.onEnterZone(bookZoneName, () => {
-    currentPopup =  WA.openPopup(bookPopupVariable, bookText,[]);
+WA.room.onEnterZone(bookZoneName, () => {
+    currentPopup =  WA.ui.openPopup(bookPopupVariable, bookText,[]);
 })
 
-WA.onLeaveZone(bookZoneName, closePopUp);
+WA.room.onLeaveZone(bookZoneName, closePopUp);
 
-WA.onEnterZone(eggZoneName, () => {
+WA.room.onEnterZone(eggZoneName, () => {
     WA.openTab("https://en.wikipedia.org/wiki/Easter_egg_(media)");
 })
 	//easter egg link: https://www.notion.so/42wolfsburg/3-Easter-Egg-Page-ba26652a736a404cac2cc4432113280d
