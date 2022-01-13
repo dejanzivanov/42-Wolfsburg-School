@@ -42,7 +42,7 @@ function launchTutorial (){
 
 
 WA.room.onEnterZone('popupZone', () => {
-    WA.displayBubble();
+    WA.ui.displayBubble();
     if (!firstTimeTutorial) {
         firstTimeTutorial = true;
         launchTutorial();
