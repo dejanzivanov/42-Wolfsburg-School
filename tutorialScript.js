@@ -89,11 +89,11 @@ let wasdText = "Dark Castle (1986) may be the first game to use WASD keys and mo
 let shiftText = "Gotta Go Fast!";
 let bookText = "'Lifelong Kindergarten: Cultivating Creativity through Projects, Passion, Peers, and Play' by Mitchel Resnick";
 
-WA.room.onEnterZone(arrowZoneName, () => {
+WA.room.onEnterLayer(arrowZoneName, () => {
     currentPopup =  WA.ui.openPopup(arrowPopup, arrowText,[])
 })
 
-WA.room.onLeaveZone(arrowZoneName, closePopUp);
+WA.room.onLeaveLayer(arrowZoneName, closePopUp);
 
 WA.room.onEnterZone(wasdZoneName, () => {
     currentPopup =  WA.ui.openPopup(wasdPopup, wasdText,[{
